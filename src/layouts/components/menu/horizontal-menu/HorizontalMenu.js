@@ -148,7 +148,7 @@ class HorizontalSidebar extends React.Component {
                     hover: this.state.itemHover === child.id,
                     "has-sub": child.children,
                     active:
-                      (child.parentOf && child.parentOf.includes(this.props.activePath) )|| 
+                      (child.parentOf && child.parentOf.includes(this.props.activePath) )||
                       (child.navLink && child.navLink === this.props.activePath),
                     "has-active-child": this.state.openDropdown.includes(
                       child.id
@@ -300,7 +300,7 @@ class HorizontalSidebar extends React.Component {
               }
               href={ item.type === "external-link" ? item.navLink : undefined }
               target={item.newTab ? "_blank" : undefined}
-              > 
+              >
               <span className="menu-icon align-middle mr-75">
                 {item.icon}
               </span>
@@ -311,7 +311,7 @@ class HorizontalSidebar extends React.Component {
                 />
                 </span>
             </CustomAnchorTag>)
-               
+
             }
           </div>
         </li>
